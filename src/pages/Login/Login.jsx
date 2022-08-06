@@ -5,7 +5,6 @@ import IMG from "../../Assets/Image/bg.jpg"
 
 function Login() {
 
-  document.body.style.backgroundImage={IMG}
 
   return (
     <div>
