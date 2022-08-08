@@ -1,7 +1,14 @@
 import { Button, TextField } from '@mui/material'
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { useNavigate } from "react-router-dom"
 
 function CreateUsers() {
+
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate("/list-user")
+  }
 
   const [users, setUsers] = useState({
     firstName : "",
@@ -22,6 +29,7 @@ function CreateUsers() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(users);
+    handleNavigate()
   }
 
   return (
