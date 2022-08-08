@@ -4,6 +4,7 @@ import Register from "./pages/Register/Register"
 import Homepage from "./pages/Homepage/Homepage";
 import CreateUser from "./pages/Create User/CreateUser"
 import ListUser from "./pages/List User/ListUser"
+import MapsPage from "./pages/Maps Page/MapsPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/homepage" element={<Homepage/>}/>
       <Route path="/create-user" element={<CreateUser/>}/>
       <Route path="/list-user" element={<ListUser/>}/>
+      <Route path="/maps-page" element={<MapsPage/>}/>
     </Routes>
   );
 }

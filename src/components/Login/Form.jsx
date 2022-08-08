@@ -14,6 +14,10 @@ function Form() {
         navigate("/register")
     }
 
+    const handleLogin = () => {
+        navigate("/homepage")
+    }
+
     const [login, setLogin] = useState({
         email : "",
         password : "",
@@ -29,6 +33,7 @@ function Form() {
     const handleSubmit = (e) => {
         e.preventDefault() 
         console.log(login);
+        handleLogin()
     }
 
   return (
@@ -40,7 +45,6 @@ function Form() {
         onSubmit={handleSubmit}
         style={{ 
         width : "400px", 
-        backgroundColor : "#fff", 
         margin : "auto", 
         padding : "50px", 
         borderRadius : "5px"

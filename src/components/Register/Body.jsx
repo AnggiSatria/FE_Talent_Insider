@@ -39,6 +39,7 @@ function Body() {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(register);
+        handleNavigate()
     }
 
   return (
@@ -56,7 +57,7 @@ function Body() {
         
         <div className="Right" style={{flex : "1"}}>
           <div >
-            <div className='form' style={{width : "400px", backgroundColor : "#fff", padding : "50px", borderRadius : "5px"}}>
+            <div className='form' style={{width : "400px", padding : "50px", borderRadius : "5px"}}>
                 <div className="firstName">
                     <h4>Fist Name</h4>
                         <TextField id="outlined-search" label="First Name" type="text" style={{width : "100%"}} name="firstName" value={register.firstName} onChange={handleChange}/>
