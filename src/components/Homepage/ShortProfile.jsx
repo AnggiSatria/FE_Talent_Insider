@@ -1,20 +1,30 @@
-import React from 'react'   
-import IMG from "../../Assets/Image/bg.jpg"
+import IMG from "../../Assets/Image/Anggi2.jpg"
+import * as React from 'react';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { useNavigate } from "react-router-dom";
 
 function ShortProfile() {
+
+    const navigate = useNavigate()
+
+    const handleNavigate = () => {
+        navigate('/create-user')
+    }
+
   return (
     <div style={{display : "flex", alignItems : "center", flexDirection : "column"}}>
-        <div className="img">
-            <img src={IMG} alt="" width={200} style={{marginTop : "50px", borderRadius : "5px"}}/>
+        <Stack className="img">
+            <Avatar onClick={handleNavigate} src={IMG} alt="" style={{marginTop : "50px"}}/>
+        </Stack>
+        <div className="name" style={{marginTop : "20px"}}>
+            <h6 style={{color : "rgba(80, 16, 56, 0.31)"}}>Anggi Satria</h6>
         </div>
-        <div className="name" style={{marginTop : "30px"}}>
-            <h5 style={{color : "rgba(80, 16, 56, 0.31)"}}>Anggi Satria</h5>
+        <div className="email" style={{marginTop : "20px"}}>
+            <h6>anggisatria122@gmail.com</h6>
         </div>
-        <div className="email" style={{marginTop : "30px"}}>
-            <h5>anggisatria122@gmail.com</h5>
-        </div>
-        <div className="phone" style={{marginTop : "30px"}}>
-            <h5>0895321589992</h5>
+        <div className="phone" style={{marginTop : "20px"}}>
+            <h6>0895321589992</h6>
         </div>
     </div>
   )
