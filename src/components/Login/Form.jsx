@@ -19,24 +19,36 @@ function Form() {
         password : "",
     })
 
-    const handleOnChange = (e) => {
+    const handleChange = (e) => {
         setLogin({
             ...login,
             [e.target.name] : e.target.value
         })
     }
 
-    const handleOnSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault() 
         console.log(login);
     }
 
   return (
     <div style={{marginTop : "50px"}}>
-        <form onSubmit={handleOnSubmit} style={{width : "400px", backgroundColor : "#fff", margin : "auto", padding : "50px", borderRadius : "5px"}}>
+        <Box
+        component="form"
+        noValidate
+        autoComplete="off"
+        onSubmit={handleSubmit}
+        style={{ 
+        width : "400px", 
+        backgroundColor : "#fff", 
+        margin : "auto", 
+        padding : "50px", 
+        borderRadius : "5px"
+        }}
+        >
             <div className="email">
                 <h4>Email</h4>
-                <TextField id="outlined-search" label="Email" type="search" style={{width : "100%"}} name="email" value={login.email} onChange={handleOnChange}/>
+                <TextField id="outlined-search" label="Email" type="search" style={{width : "100%"}} name="email" value={login.email} onChange={handleChange}/>
             </div>
 
             <div className="password" style={{marginTop : "20px"}}>
@@ -49,18 +61,19 @@ function Form() {
                     style={{width : "100%"}}
                     name="password"
                     value={login.password}
-                    onChange={handleOnChange}
+                    onChange={handleChange}
                 />
             </div>      
 
             <div className="button" style={{marginTop : "20px"}}>
-                <Button variant='contained' color='primary' style={{width : "100%", height : "40px"}}>Login</Button>
+                <Button type='submit' variant='contained' color='primary' style={{width : "100%", height : "40px"}}>Login</Button>
             </div>
-
             <div className="button" style={{marginTop : "20px"}}>
                 <Button onClick={handleNavigate} variant="outlined" style={{width : "100%", height : "40px"}}>Register</Button>
             </div>
-        </form>
+
+            </Box>
+            
     </div>
   )
 }

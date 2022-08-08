@@ -56,7 +56,7 @@ function Body() {
         
         <div className="Right" style={{flex : "1"}}>
           <div >
-            <form onSubmit={handleSubmit} style={{width : "400px", backgroundColor : "#fff", padding : "50px", borderRadius : "5px"}}>
+            <div className='form' style={{width : "400px", backgroundColor : "#fff", padding : "50px", borderRadius : "5px"}}>
                 <div className="firstName">
                     <h4>Fist Name</h4>
                         <TextField id="outlined-search" label="First Name" type="text" style={{width : "100%"}} name="firstName" value={register.firstName} onChange={handleChange}/>
@@ -90,13 +90,13 @@ function Body() {
                             onChange={handleChange}
                     />
                 </div>      
-            </form>
+            </div>
         </div>
         </div> 
         </div>
         
         <div className="button" style={{marginTop : "20px", marginBottom : "20px"}}>
-            <Button type='submit' variant='contained' color='primary' style={{width : "40%", height : "40px", marginLeft : "30%", marginRight : "30%"}}>Register</Button>
+            <Button type='submit' onClick={handleSubmit} variant='contained' color='primary' style={{width : "40%", height : "40px", marginLeft : "30%", marginRight : "30%"}}>Register</Button>
         </div>
     </div>
   )

@@ -1,8 +1,11 @@
 import React from 'react'
+import CreateUsers from '../../components/Users/CreateUsers'
 
 function CreateUser() {
   return (
-    <div>CreateUser</div>
+    <div>
+      <CreateUsers/>
+    </div>
   )
 }
 
