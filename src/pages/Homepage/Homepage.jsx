@@ -15,11 +15,11 @@ function Homepage() {
       <div className="left" style={{display : "flex", flex : "1", justifyContent : "center", border : "1px solid black", borderRadius : "5px", height : "100vh", marginTop : "10px"}}>
         <ShortProfile/>
       </div>
-      <div className="center" style={{display : "flex", flexDirection : "column", flex : "3", justifyContent : "center", marginLeft : "20px", height : "50vh", marginTop : "120px"}}>
-        <div className="up" style={{justifyContent : "center", display : "flex", border : "1px solid black", flex : "1", borderRadius : "5px"}}>
+      <div className="center" style={{display : "flex", flexDirection : "column", flex : "3", justifyContent : "center", marginLeft : "20px", height : "100vh"}}>
+        <div className="up" style={{justifyContent : "center", display : "flex", border : "1px solid black", flex : "1", borderRadius : "5px", height : "50%", marginTop : "40px"}}>
           <Post/>
         </div>
-        <div className="down" style={{marginTop : "20px", display : "flex", border : '1px solid black', flex : "4", borderRadius : "5px", height : "50vh"}}>
+        <div className="down" style={{marginTop : "20px", display : "flex", border : '1px solid black', flex : "4", borderRadius : "5px", height : "70%"}}>
           <ResultPost/>
         </div>
       </div>
