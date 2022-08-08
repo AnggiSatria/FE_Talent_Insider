@@ -11,19 +11,19 @@ function Homepage() {
   document.body.style.backgroundImage={IMG}
 
   return (
-    <div style={{display : "flex", flex : "33.3%", width : "100%", padding : "50px", minHeight : "100vh"}}>
-      <div className="left" style={{display : "flex", flex : "1", justifyContent : "center", border : "1px solid black", borderRadius : "5px"}}>
+    <div style={{display : "flex", flex : "33.3%", width : "100%", padding : "50px"}}>
+      <div className="left" style={{display : "flex", flex : "1", justifyContent : "center", border : "1px solid black", borderRadius : "5px", height : "100vh", marginTop : "10px"}}>
         <ShortProfile/>
       </div>
-      <div className="center" style={{display : "flex", flexDirection : "column", flex : "3", justifyContent : "center", minHeight : "150vh", marginLeft : "20px"}}>
+      <div className="center" style={{display : "flex", flexDirection : "column", flex : "3", justifyContent : "center", marginLeft : "20px", height : "50vh", marginTop : "120px"}}>
         <div className="up" style={{justifyContent : "center", display : "flex", border : "1px solid black", flex : "1", borderRadius : "5px"}}>
           <Post/>
         </div>
-        <div className="down" style={{marginTop : "20px", display : "flex", border : '1px solid black', flex : "3", borderRadius : "5px"}}>
+        <div className="down" style={{marginTop : "20px", display : "flex", border : '1px solid black', flex : "4", borderRadius : "5px", height : "50vh"}}>
           <ResultPost/>
         </div>
       </div>
-      <div className="right" style={{display : "flex", flex : "1", justifyContent : "center", border : "1px solid black", marginLeft : "40px", borderRadius : "5px"}}>
+      <div className="right" style={{display : "flex", flex : "1", justifyContent : "center", border : "1px solid black", marginLeft : "40px", borderRadius : "5px", overflow : "auto", marginTop : "10px", height : "100vh"}}>
         <News/>
       </div>
 

@@ -15,10 +15,10 @@ function ShortProfile() {
   return (
     <div style={{display : "flex", alignItems : "center", flexDirection : "column"}}>
         <Stack className="img">
-            <Avatar onClick={handleNavigate} src={IMG} alt="" style={{marginTop : "50px"}}/>
+            <Avatar onClick={handleNavigate} src={IMG} alt="" style={{marginTop : "50px", width : "100px", height : "90px"}}/>
         </Stack>
         <div className="name" style={{marginTop : "20px"}}>
-            <h6 style={{color : "rgba(80, 16, 56, 0.31)"}}>Anggi Satria</h6>
+            <h5 style={{color : "#000"}}>Anggi Satria</h5>
         </div>
         <div className="email" style={{marginTop : "20px"}}>
             <h6>anggisatria122@gmail.com</h6>
