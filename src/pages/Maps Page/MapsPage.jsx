@@ -11,10 +11,10 @@ function MapsPage() {
             <ShortProfile/>
         </div>
         <div className="center" style={{display : "flex", flexDirection : "column", flex : "3", justifyContent : "center", marginLeft : "20px", height : "100vh"}}>
-            <div className="up" style={{justifyContent : "center", display : "flex", border : "1px solid black", flex : "1", borderRadius : "5px", padding : "50px", height : "50%"}}>
+            <div className="up" style={{justifyContent : "center", display : "flex", flex : "1", borderRadius : "5px", height : "50%", paddingTop : "20px", paddingBottom : "70px"}}>
                 <SelectLocation/>
             </div>
-            <div className="down" style={{marginTop : "20px", display : "flex", border : '1px solid black', flex : "4", borderRadius : "5px", height : "50%"}}>
+            <div className="down" style={{marginTop : "20px", display : "flex", border : '1px solid black', flex : "8", borderRadius : "5px", height : "50%"}}>
                 <Maps/>
             </div>
         </div>

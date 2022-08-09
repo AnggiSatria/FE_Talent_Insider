@@ -55,9 +55,9 @@ function Body() {
 
         <div className="blank" style={{border : "1px solid black", display : "flex", flexDirection : "column", height : "600px"}}></div>
         
-        <div className="Right" style={{flex : "1"}}>
+        <div className="Right" style={{flex : "1", marginLeft : "50px"}}>
           <div >
-            <div className='form' style={{width : "400px", padding : "50px", borderRadius : "5px"}}>
+            <div className='form' style={{width : "400px", borderRadius : "5px"}}>
                 <div className="firstName">
                     <h4>Fist Name</h4>
                         <TextField id="outlined-search" label="First Name" type="text" style={{width : "100%"}} name="firstName" value={register.firstName} onChange={handleChange}/>
@@ -96,7 +96,7 @@ function Body() {
         </div> 
         </div>
         
-        <div className="button" style={{marginTop : "20px", marginBottom : "20px"}}>
+        <div className="button" style={{marginTop : "50px", marginBottom : "20px"}}>
             <Button type='submit' onClick={handleSubmit} variant='contained' color='primary' style={{width : "40%", height : "40px", marginLeft : "30%", marginRight : "30%"}}>Register</Button>
         </div>
     </div>

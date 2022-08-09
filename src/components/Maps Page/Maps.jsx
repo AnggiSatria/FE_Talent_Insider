@@ -1,38 +1,23 @@
-import React from "react";
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  ZoomableGroup,
-  Marker
-} from "react-simple-maps";
+import React from 'react'
+import { useMemo } from "react"
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api"
+import "../../Assets/CSS/Global.scss"
 
-import "../../Assets/CSS/maps.scss"
+export default function Maps() {
 
-const geoUrl =
-  "https://raw.githubusercontent.com/deldersveld/topojson/master/continents/africa.json";
+  const {isLoaded} = useLoadScript({googleMapsApiKey : "AIzaSyBF5vIyei8MJkKwlhmlSfv911BRCiwd2A8"})
 
+  if(!isLoaded) return <div>...</div>;
 
-function Maps() {
-
-  return (
-    <div>
-    <ComposableMap projection="geoMercator">
-      <ZoomableGroup center={[0, 0]} zoom={9}>
-        <Geographies geography={geoUrl}>
-          {({ geographies }) =>
-            geographies.map((geo) => (
-              <Geography key={geo.rsmKey} geography={geo} />
-            ))
-          }
-        </Geographies>
-        <Marker coordinates={[0, 0]}>
-          <circle r={3} fill="#FF5533" />
-        </Marker>
-      </ZoomableGroup>
-    </ComposableMap>
-  </div>
-  )
+  return <Map/>
 }
 
-export default Maps
+function Map(){
+
+  return <GoogleMap zoom={10}
+  center={{lat : -6.282740, lng : 106.770100}}
+  mapContainerClassName="map-container"
+  >
+    <Marker position={{lat : -6.282740, lng : 106.770100}}/>
+  </GoogleMap>
+}
