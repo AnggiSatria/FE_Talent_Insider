@@ -1,0 +1,23 @@
+1. microservices berarti membagi aplikasi menjadi layanan yang lebih kecil dan saling terhubung. 
+
+Microservices memungkinkan tiap fitur pada aplikasi mengalami pengembangan tersendiri. 
+
+Pola arsitektur microservices secara signifikan memengaruhi hubungan antara aplikasi dan database. 
+
+Di dalam microservices, masing-masing services atau layanan memiliki skema database tersendiri.
+
+Selain itu, services dapat menggunakan jenis database dan bahasa pemrograman yang paling sesuai dengan keperluan.
+
+Dengan begitu, tiap-tiap layanan akan lebih optimal.
+
+2. Kelebihan Microservices adalah aplikasi lebih aman dan sesuai dengan perkembangan,
+setiap service berdiri sendiri dan lebih mudah dimonitor,
+maintenance yang lebih mudah,
+tidak ada hambatan dalam menggunakan teknologi baru,
+pengembangan dapat dilakukan dari tiap service-nya tanpa mengganggu fitur utama
+
+Kekurangan Microservices adalah Jika terdapat perubahan entity pada database, entity pada service lainnya juga harus diubah.
+Sering ditemukan kesulitan untuk menerapkan perubahan services, sehingga diperlukan perancangan yang matang.
+Perlu automation yang tinggi dalam melakukan deployment.
+
+3. Dari segi User Interface Linkedin sangatlah interaktif dan baik namun dikarenakan Linkedin tidak berbayar untuk share lowongan maka seringkali perusahaan ilegal yang tembus menaruh lowongan pada aplikasi tersebut, sedangkan Glints untuk setiap perusahaan yang ingin menaruh lamaran disana berbayar sehingga hanya perusahaan yang terdaftar yang dapat menaruh lamaran, namun dari segi User Interface Glints masih kurang jika dibandingkan dengan Linkedin.
