@@ -5,10 +5,18 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useMutation } from "react-query"
+import { Users } from "../../Data Dummy/index"
 
 function Form() {
     
     const navigate = useNavigate()
+
+    const data = Users
+    console.log(data);
+
+   const users = data.find(function(e) {
+        return e.email
+   })
 
     const handleNavigate = () => {
         navigate("/register")
@@ -33,7 +41,14 @@ function Form() {
     const handleSubmit = (e) => {
         e.preventDefault() 
         console.log(login);
-        handleLogin()
+        
+        if(login.email == users.email&&users.status == "admin"){
+            handleLogin()
+        }else if(login.email == users.email&&users.status == "client"){
+            handleLogin()
+        }else{
+            navigate("/")
+        }
     }
 
   return (
