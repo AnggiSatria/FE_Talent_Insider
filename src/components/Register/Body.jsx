@@ -4,10 +4,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button';
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useMutation } from "react-query"
-import { Container, Col, Row } from "react-bootstrap"
 import "../../Assets/CSS/RegisterResponsive.scss"
 
 function Body() {
@@ -23,6 +21,7 @@ function Body() {
     }
 
     const [register, setRegister] = useState({
+        image : "",
         firstName : "",
         lastName : "",
         email : "",
@@ -50,7 +49,7 @@ function Body() {
            <div className="lefts" >
             <div>
                 <p>Upload File</p>
-                <FileUpload files={files} setFiles={setFiles}/>
+                <FileUpload name='image' value={register.image} onChange={handleChange} files={files} setFiles={setFiles}/>
             </div>
         </div>
 
