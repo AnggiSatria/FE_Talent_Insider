@@ -6,7 +6,7 @@ function Text() {
         <div className="h1">
             <h1>Register Your Account</h1>
         </div>
-        <div className="h4">
+        <div className="h5">
             <h5>Please fill up the blank fields bellow</h5>
         </div>
     </div>

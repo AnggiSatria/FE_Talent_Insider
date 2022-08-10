@@ -6,7 +6,7 @@ import Body from '../../components/Register/Body'
 function Register() {
   return (
     <div>
-      <div className="tet">
+      <div className="text">
         <Text/>
       </div>
       <div className="body">

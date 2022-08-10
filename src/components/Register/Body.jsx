@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useMutation } from "react-query"
 import { Container, Col, Row } from "react-bootstrap"
+import "../../Assets/CSS/RegisterResponsive.scss"
 
 function Body() {
 
@@ -43,49 +44,49 @@ function Body() {
     }
 
   return (
-    <div  style={{width : "100%"}}>
+    <div className='Alls' >
 
-        <div className="body" style={{width : "100%", display : "flex", flex : "50%", marginTop : "50px"}}>
-           <div className="left" style={{flex : "1", marginTop : "100px", display : "flex", flexDirection : "column", alignItems : "center"}}>
+        <div className="bodys" >
+           <div className="lefts" >
             <div>
                 <p>Upload File</p>
                 <FileUpload files={files} setFiles={setFiles}/>
             </div>
         </div>
 
-        <div className="blank" style={{border : "1px solid black", display : "flex", flexDirection : "column", height : "600px"}}></div>
+        <div className="blank"></div>
         
-        <div className="Right" style={{flex : "1", marginLeft : "50px"}}>
+        <div className="Rights" >
           <div >
-            <div className='form' style={{width : "400px", borderRadius : "5px"}}>
-                <div className="firstName">
+            <div className='forms' >
+                <div className="firstNames">
                     <h4>Fist Name</h4>
-                        <TextField id="outlined-search" label="First Name" type="text" style={{width : "100%"}} name="firstName" value={register.firstName} onChange={handleChange}/>
+                        <TextField className='firstNames2' id="outlined-search" label="First Name" type="text" name="firstName" value={register.firstName} onChange={handleChange}/>
                 </div>
 
-                <div className="lastName" style={{marginTop : "20px"}}>
+                <div className="lastNames">
                     <h4>Last Name</h4>
-                    <TextField id="outlined-search" label="Last Name" type="mail" style={{width : "100%"}} name="lastName" value={register.lastName} onChange={handleChange}/>
+                    <TextField id="outlined-search" className='lastNames2' label="Last Name" type="mail" name="lastName" value={register.lastName} onChange={handleChange}/>
                 </div>
 
-                <div className="email" style={{marginTop : "20px"}}>
+                <div className="emails">
                     <h4>Email Address</h4>
-                    <TextField id="outlined-search" label="Email" type="mail" style={{width : "100%"}} name="email" value={register.email} onChange={handleChange}/>
+                    <TextField className='emails2' id="outlined-search" label="Email" type="mail" name="email" value={register.email} onChange={handleChange}/>
                 </div>
 
-                <div className="lastName" style={{marginTop : "20px"}}>
+                <div className="phones">
                     <h4>No Phone</h4>
-                    <TextField id="outlined-search" label="No Phone" type="number" style={{width : "100%"}} name="phone" value={register.phone} onChange={handleChange}/>
+                    <TextField className='phones2' id="outlined-search" label="No Phone" type="number" name="phone" value={register.phone} onChange={handleChange}/>
                 </div>
 
-                <div className="password" style={{marginTop : "20px"}}>
+                <div className="passwords">
                     <h4>Password</h4>
                     <TextField
+                            className='passwords2'
                             id="outlined-password-input"
                             label="Password"
                             type="password"
                             autoComplete="current-password"
-                            style={{width : "100%"}}
                             name="password"
                             value={register.password}
                             onChange={handleChange}
@@ -96,8 +97,8 @@ function Body() {
         </div> 
         </div>
         
-        <div className="button" style={{marginTop : "50px", marginBottom : "20px"}}>
-            <Button type='submit' onClick={handleSubmit} variant='contained' color='primary' style={{width : "40%", height : "40px", marginLeft : "30%", marginRight : "30%"}}>Register</Button>
+        <div className="buttons" style={{marginBottom : "20px"}}>
+            <Button className='buttons2' type='submit' onClick={handleSubmit} variant='contained' color='primary' >Register</Button>
         </div>
     </div>
   )

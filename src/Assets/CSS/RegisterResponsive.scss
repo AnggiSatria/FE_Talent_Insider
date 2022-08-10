@@ -1,0 +1,175 @@
+.Alls {
+    width : 100%;
+}
+
+.bodys {
+    width : 100%; 
+    display : flex; 
+    flex : 50%; 
+    margin-top : 50px;
+}
+
+.lefts {
+    flex : 1; 
+    margin-top : 100px; 
+    display : flex; 
+    flex-direction : column; 
+    align-items : center;
+}
+
+.blank {
+    border : 1px solid black; 
+    display : flex; 
+    flex-direction : column; 
+    height : 600px;
+}
+
+.Rights {
+    flex : 1; 
+    margin-left : 50px;
+}
+
+.forms {
+    width : 400px; 
+    border-radius : 5px;
+}
+
+.firstNames2 {
+    width : 100%;
+}
+
+.lastNames {
+    margin-top : 20px;
+}
+
+.lastNames2 {
+    width : 100%;
+}
+
+.emails {
+    margin-top : 20px;
+}
+
+.emails2 {
+    width : 100%;
+}
+
+.phones {
+    margin-top : 20px;
+}
+
+.phones2 {
+    width : 100%;
+}
+
+.passwords {
+    margin-top : 20px;
+}
+
+.passwords2 {
+    width : 100%;
+}
+
+.buttons {
+    margin-top : 50px; 
+    margin-bottom : 20px;
+    margin-left : 30% ;
+    margin-right : 30%;
+}
+
+.buttons2 {
+    width : 100%; 
+    height : 40px; 
+    
+}
+
+@media only screen and (max-width : 600px) {
+    .Alls {
+        width : 100%;
+        display: grid;
+        grid-template-areas: "bodys bodys bodys bodys bodys bodys bodys bodys bodys bodys bodys bodys"
+        "buttons buttons buttons buttons buttons buttons buttons buttons buttons buttons buttons buttons";
+    }
+    
+    .bodys {
+        width : 100%; 
+        display : flex;  
+        grid-area: bodys;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+    
+    .lefts {
+        grid-area: lefts;
+        display : flex; 
+        flex-direction : column; 
+        align-items : center;
+        width: 100%;
+    }
+    
+    .blank {
+        display : none; 
+    }
+    
+    .Rights {
+        // flex : 1; 
+        // margin-left : 50px;
+        margin-top: 20px;
+        grid-area: rights;
+        width: 100%;
+    }
+    
+    .forms {
+        width : 100%; 
+        border-radius : 5px;
+        
+    }
+    
+    .firstNames2 {
+        width : 80%;
+    }
+    
+    .lastNames {
+        margin-top : 20px;
+    }
+    
+    .lastNames2 {
+        width : 80%;
+    }
+    
+    .emails {
+        margin-top : 20px;
+    }
+    
+    .emails2 {
+        width : 80%;
+    }
+    
+    .phones {
+        margin-top : 20px;
+    }
+    
+    .phones2 {
+        width : 80%;
+    }
+    
+    .passwords {
+        margin-top : 20px;
+    }
+    
+    .passwords2 {
+        width : 80%;
+    }
+
+    .buttons {
+        margin-top : 50px; 
+        margin-bottom : 20px;
+        grid-area: buttons;
+    }
+    
+    .buttons2 {
+        width : 100%; 
+        height : 40px; 
+    }
+}
