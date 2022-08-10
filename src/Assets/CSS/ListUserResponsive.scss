@@ -45,12 +45,11 @@
 
 @media only screen and (max-width : 600px) {
     .containers {
-        display: grid;
-        grid-template-areas: "header header header header header header header header header header header header"
-        "table table table table table table table table table table table table table";
+        display: flex;
+        flex-direction: column;
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 20px;
     }
     
     .header {
@@ -60,15 +59,25 @@
     }
     
     .h4 {
-        flex: 9;
+        flex: 1;
     }
     
     .button1 {
         flex: 1;
     }
-    
-    .table {
-        width : 100%;
+
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }    
+
+    .table tr {
+        margin-bottom: 15px;
     }
     
     .button {
