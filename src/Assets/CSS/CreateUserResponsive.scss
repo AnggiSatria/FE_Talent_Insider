@@ -1,0 +1,104 @@
+.txt {
+    text-align : center;
+}
+
+.form {
+    width : 600px; 
+    padding : 50px; 
+    border-radius : 5px; 
+    margin : auto;
+}
+
+.firstName2 {
+    width : 100%;
+}
+
+.lastName {
+    margin-top : 20px;
+}
+
+.lastName2 {
+    width : 100%;
+}
+
+.email {
+    margin-top : 20px;
+}
+
+.email2 {
+    width : 100%;
+}
+
+.phone {
+    margin-top : 20px;
+}
+
+.phone2 {
+    width : 100%;
+}
+
+.password {
+    margin-top : 20px;
+}
+
+.password2 {
+    width : 100%;
+}
+
+.buttonForm {
+    margin-top : 40px; 
+    width : 100%;
+}
+
+@media only screen and (max-width : 600px) {
+
+    .txt {
+        text-align : center;
+    }
+    
+    .form {
+        width : 100%;  
+        border-radius : 5px;
+    }
+    
+    .firstName2 {
+        width : 100%;
+    }
+    
+    .lastName {
+        margin-top : 20px;
+    }
+    
+    .lastName2 {
+        width : 100%;
+    }
+    
+    .email {
+        margin-top : 20px;
+    }
+    
+    .email2 {
+        width : 100%;
+    }
+    
+    .phone {
+        margin-top : 20px;
+    }
+    
+    .phone2 {
+        width : 100%;
+    }
+    
+    .password {
+        margin-top : 20px;
+    }
+    
+    .password2 {
+        width : 100%;
+    }
+    
+    .buttonForm {
+        margin-top : 20px; 
+        width : 100%;
+    }
+}

@@ -3,7 +3,7 @@
     width: 100%;
     grid-template-areas: "header header header header header header header header header header header header"
     "Table Table Table Table Table Table Table Table Table Table Table Table";
-    padding: 50px;
+    padding: 20px;
 }
 
 .header {
@@ -45,19 +45,45 @@
 
 @media only screen and (max-width : 600px) {
     .containers {
-        width: 100%;
         display: grid;
         grid-template-areas: "header header header header header header header header header header header header"
-        "Table Table Table Table Table Table Table Table Table Table Table Table";
+        "table table table table table table table table table table table table table";
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
-
+    
     .header {
-        width: 100%;
-        grid-area: header;
+        display : flex;
+        width : 100%; 
+        flex : 50%;
     }
-
+    
+    .h4 {
+        flex: 9;
+    }
+    
+    .button1 {
+        flex: 1;
+    }
+    
     .table {
-        width: 100%;
-        grid-area: Table;
+        width : 100%;
+    }
+    
+    .button {
+        display : flex; 
+        flex : 50%; 
+        margin-top : 40px;
+    }
+    
+    .buttonModal {
+        flex : 1; 
+        margin-right : 10px;
+    }
+    
+    .buttonModal2 {
+        flex : 1; 
+        margin-left : 10px;
     }
 }
