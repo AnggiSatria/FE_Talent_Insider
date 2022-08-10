@@ -6,15 +6,15 @@ function News() {
     const news = [
         {
             image : IMG,
-            text : "Talent Insider Sedang membuk lowongan untuk FrontEnd Developer",
+            text : "Talent Insider Sedang membuka lowongan untuk FrontEnd Developer",
         },
     ]
 
   return (
     <div style={{display : "flex", flexDirection : "column"}}>
         {news.map((e) => {
-            return <div style={{padding : "20px", display : "flex", flexDirection : "column"}}>              
-                <a href="">
+            return <div style={{ display : "flex", flexDirection : "column"}}>              
+                <a href="" style={{display : "flex", justifyContent : "center", flexDirection : "column"}}>
                     <img src={e?.image} alt="" style={{marginTop : "20px"}}/>
                     <h6 style={{textAlign : "center"}}>{e?.text}</h6>
                 </a>

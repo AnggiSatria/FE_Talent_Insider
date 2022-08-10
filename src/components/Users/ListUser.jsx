@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table';
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { useNavigate } from 'react-router-dom';
+import "../../Assets/CSS/ListUserResponsive.scss"
 
 function ListUsers() {
 
@@ -28,13 +29,13 @@ function ListUsers() {
   }
 
   return (
-    <div style={{padding : "50px"}}>
-      <div className="header" style={{display : "flex", width : "100%", flex : "50%"}}>
-        <h4 style={{flex : "9"}}>List Users</h4>
-        <Button onClick={handleNavigate} variant='primary'style={{marginLeft : "20px", flex : "1"}}>Create Users</Button>
+    <div className='containers'>
+      <div className="header" >
+        <h4 className='h4'>List Users</h4>
+        <Button className='button1' onClick={handleNavigate} variant='primary'>Create Users</Button>
       </div>
       
-      <Table striped bordered hover variant="dark" style={{marginTop : "20px"}}>
+      <Table className='table' striped bordered hover variant="dark" >
       <thead>
         <tr>
           <th>ID</th>
@@ -71,11 +72,11 @@ function ListUsers() {
           <div className="text">
             <h6>Are You Sure Want To Delete?</h6>
           </div>
-          <div className="button" style={{display : "flex", flex : "50%", marginTop : "40px"}}>
-            <Button variant="secondary" onClick={handleClose} style={{flex : "1", marginRight : "10px"}}>
+          <div className="button">
+            <Button className='buttonModal' variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" style={{flex : "1", marginLeft : "10px"}}>Yes</Button>
+            <Button className='buttonModal2' variant="primary">Yes</Button>
           </div>
           
         </Modal.Body>
